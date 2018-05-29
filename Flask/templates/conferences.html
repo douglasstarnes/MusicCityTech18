@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block body %}
+<h1>
+    Conferences
+</h1>
+{% for conference in conferences %}
+<div>
+    <b>{{ conference.title }}</b><br/>
+    <i>${{ conference.price }}</i>
+</div>
+{% endfor %}
+{% endblock %}
